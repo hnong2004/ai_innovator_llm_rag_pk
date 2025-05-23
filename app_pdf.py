@@ -26,7 +26,7 @@ def load_embedding_and_qdrant():
 def load_and_add_documents(_qdrant, _embedding_model):
     
     # เปลี่ยนเส้นทางไปยังไฟล์ PDF ที่ต้องการ ตัวอย่าง ข้อมูลยา 50 ชนิด
-    source = "./pdf/ข้อมูลยา 50 ชนิด.pdf"
+    source = "./pdf/3Season-in-nan.pdf"
     converter = DocumentConverter()
     result = converter.convert(source)
     markdown_text = result.document.export_to_markdown()
